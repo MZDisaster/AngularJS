@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
+﻿<div>
+    <div class="element" ng-controller="Uppgift5Controller">
+        <h1 class="title">Uppgift 5</h1>
+        <div class="contain element">
+            <button ng-click="startTimer()" class="btn btn-success">Start Timer</button>
+            <button ng-click="stopTimer()" class="btn btn-success">Stop Timer</button>
 
-</body>
-</html>
+            <h1>{{timeLeft | numberFixedLen:len:fraclen}}</h1>
+        </div>
+    </div>
+</div>

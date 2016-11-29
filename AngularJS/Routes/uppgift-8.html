@@ -1,10 +1,29 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
-
-</body>
-</html>
+﻿<div>
+    <div class="element" ng-controller="Uppgift8Controller">
+        <h1 class="title">Uppgift 8</h1>
+        <div class="contain element">
+            <table>
+                <thead>
+                    <tr>
+                        <td ng-repeat="(key, value) in Items[0]">
+                            <h3>{{key}}</h3>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="i in Items">
+                        <td>
+                            <h3>{{i.Name}}</h3>
+                        </td>
+                        <td>
+                            <h3>{{i.Price}}</h3>
+                        </td>
+                        <td>
+                            <h3>{{i.Description}}</h3>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

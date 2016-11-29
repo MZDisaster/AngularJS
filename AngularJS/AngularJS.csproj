@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AngularJS</RootNamespace>
     <AssemblyName>AngularJS</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -82,10 +83,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
@@ -96,7 +93,18 @@
   <ItemGroup>
     <Content Include="App\Controllers\NavController.js" />
     <Content Include="App\Controllers\Uppgift3Controller.js" />
+    <Content Include="App\Controllers\Uppgift5Controller.js" />
+    <Content Include="App\Controllers\Uppgift6Controller.js" />
+    <Content Include="App\Controllers\Uppgift7Controller.js" />
+    <Content Include="App\Controllers\Uppgift8Controller.js" />
+    <Content Include="App\Controllers\FizzBuzzController.js" />
+    <Content Include="App\Filters\BuzzNumberFilter.js" />
+    <Content Include="App\Filters\ExcludedNumberFilter.js" />
+    <Content Include="App\Filters\FizzBuzzNumberFilter.js" />
+    <Content Include="App\Filters\FizzNumberFilter.js" />
+    <Content Include="App\Filters\NumberFixed.js" />
     <Content Include="App\Filters\ReverseTextFilter.js" />
+    <Content Include="App\Services\FizzBuzzService.js" />
     <Content Include="App\Services\NavigationService.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="packages.config" />

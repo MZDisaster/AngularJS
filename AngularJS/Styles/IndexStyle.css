@@ -48,12 +48,83 @@ td{
     align-items:center;
     box-shadow:none;
     background-color:transparent;
-    min-width:300px;
+    min-width:330px;
     min-height:300px;
     text-align:center;
     margin-bottom:10px;
     position:relative;
     top:0;
+}
+
+.contain2{
+    position:relative;
+    min-width:330px;
+    flex-grow:9;
+    flex-shrink:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.midcontain{
+    display:flex;
+    flex-flow:column;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:80%;
+    min-width:350px;
+    margin:0;
+    top:0;
+    padding:0;
+    position:absolute;
+}
+
+.maincontain{
+    display:flex;
+    flex-flow:column;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:none;
+    background-color:transparent;
+    min-width:70%;
+    min-height:350px;
+    text-align:center;
+    position:relative;
+    top:0;
+    padding:0;
+    margin:0;
+}
+
+.contain{
+    display:flex;
+    flex-flow:column;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:none;
+    background-color:transparent;
+    min-width:330px;
+    min-height:300px;
+    text-align:center;
+    margin-bottom:10px;
+    position:relative;
+    top:0;
+}
+
+.navbar1{
+    display:flex;
+    flex-flow:column;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:none;
+    background-color:transparent;
+    min-width:330px;
+    text-align:center;
+    width:100%;
+    margin:0;
 }
 
 .height{
@@ -64,6 +135,7 @@ td{
     background-color:#232323;
     box-shadow: 2px 0 15px -4px rgba(0, 0, 0, 0.8) inset, -2px 0 8px -4px rgba(0, 0, 0, 0.8) inset;
     padding:10px;
+    width:100%;
 }
 
 .bottomRow{
@@ -72,3 +144,90 @@ td{
     flex-direction:row;
     justify-content:space-between;
 }
+
+#fizzbuzzContent{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+}
+
+#fizzbuzzinput{
+    background-color: rgba(0, 0, 0, 0.08);
+    align-self:center;
+    min-width:280px;
+    display:flex;
+    flex-flow:column wrap;
+    align-items:center;
+    margin-bottom:1em;
+    box-shadow: rgba(0, 0, 0, 0.08) 5px 5px 10px;
+    border-radius:5px;
+}
+
+
+#fizzresult, #buzzresult, #fizzbuzzresult, #excludedresult{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.08);
+    box-shadow: rgba(0, 0, 0, 0.08) 5px 5px 10px;
+    min-width:280px;
+    width:250px;
+    height:400px;
+    max-height:400px;
+    text-align:center;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    margin-top:1em;
+    border-radius:5px;
+    position:relative;
+}
+
+.list{
+    position:absolute;
+    top:2em;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+#fizzresult h2, #buzzresult h2, #fizzbuzzresult h2 , #excludedresult h2{
+    margin:0;
+    padding:0;
+}
+
+
+#fizzresultUL, #buzzresultUL, #fizzbuzzresultUL, #excludedresultUL{
+    margin:0;
+    padding:0;
+}
+
+#fizzresultUL li, #buzzresultUL li, #fizzbuzzresultUL li, #excludedresultUL li{
+    border-bottom: solid 1px #000000;
+    margin:5px;
+}
+
+#fizzresultUL li:last-of-type, #buzzresultUL li:last-of-type, #fizzbuzzresultUL li:last-of-type, #excludedresultUL li:last-of-type{
+    border-bottom: none;
+}
+
+::-webkit-scrollbar {
+    margin-right:5px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #2e2c2b;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) inset;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}   

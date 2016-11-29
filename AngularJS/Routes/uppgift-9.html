@@ -1,10 +1,56 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
-
-</body>
-</html>
+﻿<div>
+    <div class="element" ng-controller="FizzBuzzController">
+        <h1 class="title">Uppgift 9</h1>
+        <div class="contain2 element">
+            <div id="fizzbuzzinput">
+                <label for="number">Start number:</label><input type="number" id="startNumber" ng-model="StartNumber" class="form-control" />
+                <label for="number">End number:</label><input type="number" id="endNumber" ng-model="EndNumber" class="form-control" />
+                <label for="number">Input a fizz number:</label><input type="number" id="fizznumber" ng-model="FizzNumber" class="form-control" />
+                <label for="number">Input a buzz number:</label><input type="number" id="buzznumber" ng-model="BuzzNumber" class="form-control" />
+                <button id="numberSubmit" value="12" class="btn btn-default" ng-click="checkNumbers()">Check</button>
+            </div>
+            <div id="fizzbuzzContent">
+                <div id="fizzresult">
+                    <h2>Fizz Result:</h2>
+                    <div class="list">
+                        <ul id="fizzresultUL">
+                            <li ng-repeat="fizzResult in FizzBuzzResult.FizzResult">
+                                {{fizzResult}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="buzzresult">
+                    <h2>Buzz Result:</h2>
+                    <div class="list">
+                        <ul id="buzzresultUL">
+                            <li ng-repeat="buzzResult in FizzBuzzResult.BuzzResult">
+                                {{buzzResult}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="fizzbuzzresult">
+                    <h2>FizzBuzz Result:</h2>
+                    <div class="list">
+                        <ul id="fizzbuzzresultUL">
+                            <li ng-repeat="fizzbuzzResult in FizzBuzzResult.FizzBuzzResult">
+                                {{fizzbuzzResult}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="excludedresult">
+                    <h2>Excluded Result:</h2>
+                    <div class="list">
+                        <ul id="excludedresultUL">
+                            <li ng-repeat="excluded in FizzBuzzResult.Excluded">
+                                {{excluded}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

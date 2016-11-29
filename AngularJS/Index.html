@@ -10,9 +10,13 @@
 </head>
 
 <body ng-app="app" ng-cloak>
-    <div class="contain">
-        <div ng-include="'navbar.html'"></div>
-        <div ng-view>
+    <div class="maincontain">
+        <div class="midcontain">
+            <div ng-include="'navbar.html'" class="navbar1">
+
+            </div>
+            <div ng-view style="width:100%;">
+            </div>
         </div>
     </div>
 </body>
@@ -28,13 +32,22 @@
 <script src="App/App.js"></script>
 
 <script src="App/Filters/ReverseTextFilter.js"></script>
+<script src="App/Filters/NumberFixed.js"></script>
+<script src="App/Filters/FizzNumberFilter.js"></script>
+<script src="App/Filters/BuzzNumberFilter.js"></script>
+<script src="App/Filters/FizzBuzzNumberFilter.js"></script>
+<script src="App/Filters/ExcludedNumberFilter.js"></script>
 
 <script src="App/Services/NavigationService.js"></script>
-
+<script src="App/Services/FizzBuzzService.js"></script>
 
 <script src="App/Controllers/MainController.js"></script>
 <script src="App/Controllers/NavController.js"></script>
 <script src="App/Controllers/UppgiftController.js"></script>
 <script src="App/Controllers/StoreController.js"></script>
 <script src="App/Controllers/Uppgift3Controller.js"></script>
-
+<script src="App/Controllers/Uppgift5Controller.js"></script>
+<script src="App/Controllers/Uppgift6Controller.js"></script>
+<script src="App/Controllers/Uppgift7Controller.js"></script>
+<script src="App/Controllers/Uppgift8Controller.js"></script>
+<script src="App/Controllers/FizzBuzzController.js"></script>
