@@ -1,0 +1,74 @@
+﻿body {
+    background-color: #111111;
+    color:#999999;
+    user-select:none;
+    cursor:default;
+}
+
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+.ng-animate-shim {
+  visibility:hidden;
+}
+
+.ng-anchor {
+  position:absolute;
+}
+
+
+h1{
+    color:#c1c1c1;
+}
+
+tr{
+    min-width:100px;
+    min-height:30px;
+}
+
+td{
+    min-width:100px;
+    min-height:30px;
+}
+
+.contain{
+    display:flex;
+    flex-flow:column;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:none;
+    background-color:transparent;
+    min-width:300px;
+    min-height:300px;
+    text-align:center;
+    margin-bottom:10px;
+    position:relative;
+    top:0;
+}
+
+.height{
+    min-height:300px;
+}
+
+.element{
+    background-color:#232323;
+    box-shadow: 2px 0 15px -4px rgba(0, 0, 0, 0.8) inset, -2px 0 8px -4px rgba(0, 0, 0, 0.8) inset;
+    padding:10px;
+}
+
+.bottomRow{
+    display:flex;
+    flex-flow:row;
+    flex-direction:row;
+    justify-content:space-between;
+}

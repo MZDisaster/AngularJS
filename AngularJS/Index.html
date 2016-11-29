@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/IndexStyle.css" rel="stylesheet" />
+    <base href="/" />
+
+</head>
+
+<body ng-app="app" ng-cloak>
+    <div class="contain">
+        <div ng-include="'navbar.html'"></div>
+        <div ng-view>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="Scripts/jquery-1.9.1.js"></script>
+
+<script src="Scripts/angular.js"></script>
+<script src="Scripts/angular-route.js"></script>
+<script src="Scripts/angular-resource.js"></script>
+
+
+<script src="App/App.js"></script>
+
+<script src="App/Filters/ReverseTextFilter.js"></script>
+
+<script src="App/Services/NavigationService.js"></script>
+
+
+<script src="App/Controllers/MainController.js"></script>
+<script src="App/Controllers/NavController.js"></script>
+<script src="App/Controllers/UppgiftController.js"></script>
+<script src="App/Controllers/StoreController.js"></script>
+<script src="App/Controllers/Uppgift3Controller.js"></script>
+

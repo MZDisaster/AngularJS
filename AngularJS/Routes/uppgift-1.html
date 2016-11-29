@@ -1,0 +1,23 @@
+﻿<div>
+    <div class="element" ng-controller="StoreController">
+        <h1 class="title">Uppgift 1</h1>
+        <div class="contain element">
+            <table>
+                <thead>
+                    <tr>
+                        <td ng-repeat="(key, value) in product">
+                            <h3>{{key}}</h3>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td ng-repeat="product in product">
+                            <h3>{{product}}</h3>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
