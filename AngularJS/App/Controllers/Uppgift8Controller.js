@@ -11,4 +11,6 @@ app.controller('Uppgift8Controller', ['$scope', function ($scope) {
         { Name: 'Item-7', Price: 700, Description: 'The Seventh item!' },
         { Name: 'Item-8', Price: 800, Description: 'The Eighth item!' }
     ];
+
+    $scope.MouseOver = false;
 }]);

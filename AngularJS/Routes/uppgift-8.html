@@ -2,7 +2,7 @@
     <div class="element" ng-controller="Uppgift8Controller">
         <h1 class="title">Uppgift 8</h1>
         <div class="contain element">
-            <table>
+            <table class="table">
                 <thead>
                     <tr>
                         <td ng-repeat="(key, value) in Items[0]">
@@ -11,15 +11,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="i in Items">
+                    <tr ng-repeat="i in Items" ng-mousemove="MouseOver = true" ng-mouseleave="MouseOver = false">
                         <td>
-                            {{i.Name}}
+                            <div>{{i.Name}}</div>
                         </td>
                         <td>
-                            {{i.Price}}
+                            <div>{{i.Price}}</div>
                         </td>
-                        <td>
-                            {{i.Description}}
+                        <td style="width:40%;">
+                            <div ng-show="MouseOver">
+                                {{i.Description}}
+                            </div>
                         </td>
                     </tr>
                 </tbody>

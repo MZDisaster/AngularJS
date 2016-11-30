@@ -1,16 +1,19 @@
 ﻿'use strict';
 
-app.filter('numberFixedLen', ['$filter', function ($filter) {
+app.filter('Timer', ['$filter', function ($filter) {
     return function (n, len, fractionSize) {
-        var num = parseInt($filter('number')(n, fractionSize), 10);
+        var num = n;
         len = parseInt(len, 10);
         if (isNaN(num) || isNaN(len)) {
             return n;
         }
-        num = ''+num;
-        while (num.length < len) {
-            num = '0'+num;
+        num = '' + $filter('number')(n, fractionSize), 10;
+        while (num.length < (len + fractionSize + 1)) {
+            num = '0' + num;
         }
+
+        num = num.replace('.', ':');
+
         return num;
     };
 }]);

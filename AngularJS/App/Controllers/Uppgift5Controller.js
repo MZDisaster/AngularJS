@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-app.controller('Uppgift5Controller', ['$scope', '$interval', 'numberFixedLenFilter', function ($scope, $interval) {
+app.controller('Uppgift5Controller', ['$scope', '$interval', 'TimerFilter', function ($scope, $interval) {
     $scope.timeLeft = 10;
 
     $scope.len = 2;
@@ -8,10 +8,11 @@ app.controller('Uppgift5Controller', ['$scope', '$interval', 'numberFixedLenFilt
 
     var interval = $interval(function () { },1,1);
     $scope.startTimer = function () {
-        console.log('called');
+        if($scope.timeLeft == 0)
+            $scope.timeLeft = 10;
+        $interval.cancel(interval);
         interval = $interval(function () {
             $scope.timeLeft -= 0.01;
-            console.log($scope.timeLeft.length);
             if ($scope.timeLeft <= 0) {
                 $interval.cancel(interval);
                 $scope.timeLeft = 0;
@@ -23,6 +24,8 @@ app.controller('Uppgift5Controller', ['$scope', '$interval', 'numberFixedLenFilt
         $interval.cancel(interval);
     };
     
-
+    $scope.resetTimer = function () {
+        $scope.timeLeft = 10;
+    };
 
 }]);

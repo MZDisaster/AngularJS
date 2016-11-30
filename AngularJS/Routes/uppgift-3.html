@@ -2,9 +2,27 @@
     <div class="element" ng-controller="Uppgift3Controller">
         <h1 class="title">Uppgift 3</h1>
         <div class="contain element">
-            <input type="text" ng-model="Text" class="form-control"/>
-            <h1>{{ Text }}</h1>
-            <h2>{{ Text | ReverseText }}</h2>
+            <table style="width:60%;">
+                <thead>
+                    <tr>
+                        <td>
+                            <input type="text" ng-model="Text" class="form-control" />
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h1>{{ Text }}</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>{{ Text | ReverseText }}</h2>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

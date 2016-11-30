@@ -21,7 +21,8 @@ var app = angular.module('app', ["ngRoute", "ngResource"])
             });
         }
     }])
-    .run(function ($rootScope) {
+    .run(function ($rootScope, $templateCache) {
+        $templateCache.removeAll();
         $rootScope.Item = { Name: 'Item-1', Price: 500, Description: 'The first item!' };
     });
 

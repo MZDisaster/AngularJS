@@ -2,7 +2,7 @@
 
 app.controller('NavController',
     function ($scope, $route, NavigationService, NavButtonClassService) {
-        
+
         $scope.next = function () {
             NavigationService.next($route.current.params.id || 0);
         }

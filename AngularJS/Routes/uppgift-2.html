@@ -2,8 +2,22 @@
     <div class="element">
         <h1 class="title">Uppgift 2</h1>
         <div class="contain element">
-            <a ng-click="isVisible = !isVisible" class="btn btn-lg" ng-class="isVisible ? 'btn-warning' : 'btn-success'">Toggle Text</a>
-            <h3 ng-show="isVisible">Sample Text</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <a ng-click="isVisible = !isVisible" class="btn btn-lg" ng-class="isVisible ? 'btn-warning' : 'btn-success'">Toggle Text</a>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td>
+                           <h3 ng-show="isVisible">Sample Text</h3>
+                       </td> 
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

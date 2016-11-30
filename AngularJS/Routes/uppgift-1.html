@@ -5,15 +5,27 @@
             <table>
                 <thead>
                     <tr>
-                        <td ng-repeat="(key, value) in product">
-                            <h3>{{key}}</h3>
+                        <td>
+                            <h3>Name</h3>
+                        </td>
+                        <td>
+                            <h3>Price</h3>
+                        </td>
+                        <td>
+                            <h3>Description</h3>
                         </td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td ng-repeat="product in product">
-                            <h3>{{product}}</h3>
+                        <td>
+                            <h3>{{Item.Name}}</h3>
+                        </td>
+                        <td>
+                            <h3>{{Item.Price}}</h3>
+                        </td>
+                        <td>
+                            <h3>{{Item.Description}}</h3>
                         </td>
                     </tr>
                 </tbody>

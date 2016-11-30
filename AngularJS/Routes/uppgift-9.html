@@ -3,11 +3,12 @@
         <h1 class="title">Uppgift 9</h1>
         <div class="contain2 element">
             <div id="fizzbuzzinput">
-                <label for="number">Start number:</label><input type="number" id="startNumber" ng-model="StartNumber" class="form-control" />
-                <label for="number">End number:</label><input type="number" id="endNumber" ng-model="EndNumber" class="form-control" />
-                <label for="number">Input a fizz number:</label><input type="number" id="fizznumber" ng-model="FizzNumber" class="form-control" />
-                <label for="number">Input a buzz number:</label><input type="number" id="buzznumber" ng-model="BuzzNumber" class="form-control" />
-                <button id="numberSubmit" value="12" class="btn btn-default" ng-click="checkNumbers()">Check</button>
+                <form ng-keyup="checkNumbers()" ng-click="checkNumbers()">
+                    <label for="number">Start number:</label><input type="number" id="startNumber" ng-model="StartNumber" class="form-control" />
+                    <label for="number">End number:</label><input type="number" id="endNumber" ng-model="EndNumber" class="form-control" />
+                    <label for="number">Input a fizz number:</label><input type="number" id="fizznumber" ng-model="FizzNumber" class="form-control" />
+                    <label for="number">Input a buzz number:</label><input type="number" id="buzznumber" ng-model="BuzzNumber" class="form-control" />
+                </form>
             </div>
             <div id="fizzbuzzContent">
                 <div id="fizzresult">

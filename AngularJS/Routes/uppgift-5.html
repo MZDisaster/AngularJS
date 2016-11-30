@@ -2,10 +2,28 @@
     <div class="element" ng-controller="Uppgift5Controller">
         <h1 class="title">Uppgift 5</h1>
         <div class="contain element">
-            <a ng-click="startTimer()" class="btn btn-success">Start Timer</a>
-            <a ng-click="stopTimer()" class="btn btn-success">Stop Timer</a>
-
-            <h1>{{timeLeft | numberFixedLen:2:3}}</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <a ng-click="startTimer()" class="btn btn-success">Start Timer</a> 
+                        </td>
+                        <td>
+                            <a ng-click="stopTimer()" class="btn btn-success">Stop Timer</a>
+                        </td>
+                        <td>
+                            <a ng-click="resetTimer()" class="btn btn-success">Reset Timer</a>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h1>{{timeLeft | Timer:2:3}}</h1>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
