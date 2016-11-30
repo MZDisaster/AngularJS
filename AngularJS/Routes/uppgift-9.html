@@ -15,7 +15,7 @@
                     <div class="list">
                         <ul id="fizzresultUL">
                             <li ng-repeat="fizzResult in FizzBuzzResult.FizzResult">
-                                {{fizzResult}}
+                                {{fizzResult | FizzNumber}}
                             </li>
                         </ul>
                     </div>
@@ -25,7 +25,7 @@
                     <div class="list">
                         <ul id="buzzresultUL">
                             <li ng-repeat="buzzResult in FizzBuzzResult.BuzzResult">
-                                {{buzzResult}}
+                                {{buzzResult | BuzzNumber}}
                             </li>
                         </ul>
                     </div>
@@ -35,7 +35,7 @@
                     <div class="list">
                         <ul id="fizzbuzzresultUL">
                             <li ng-repeat="fizzbuzzResult in FizzBuzzResult.FizzBuzzResult">
-                                {{fizzbuzzResult}}
+                                {{fizzbuzzResult | FizzBuzzNumber}}
                             </li>
                         </ul>
                     </div>
@@ -45,7 +45,7 @@
                     <div class="list">
                         <ul id="excludedresultUL">
                             <li ng-repeat="excluded in FizzBuzzResult.Excluded">
-                                {{excluded}}
+                                {{excluded | ExcludedNumber}}
                             </li>
                         </ul>
                     </div>

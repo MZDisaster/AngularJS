@@ -166,7 +166,7 @@ td{
 
 #fizzresult, #buzzresult, #fizzbuzzresult, #excludedresult{
     padding: 0;
-    margin: 0;
+    margin: 1em 1em;
     background-color: rgba(0, 0, 0, 0.08);
     box-shadow: rgba(0, 0, 0, 0.08) 5px 5px 10px;
     min-width:280px;
@@ -176,7 +176,6 @@ td{
     text-align:center;
     overflow-y:hidden;
     overflow-x:hidden;
-    margin-top:1em;
     border-radius:5px;
     position:relative;
 }

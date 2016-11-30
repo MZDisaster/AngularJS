@@ -2,7 +2,7 @@
 
 app.filter('numberFixedLen', ['$filter', function ($filter) {
     return function (n, len, fractionSize) {
-        var num = parseInt($filter('number')(num, fractionSize), 10);
+        var num = parseInt($filter('number')(n, fractionSize), 10);
         len = parseInt(len, 10);
         if (isNaN(num) || isNaN(len)) {
             return n;

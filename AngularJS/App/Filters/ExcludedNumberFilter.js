@@ -1,6 +1,8 @@
 ﻿
 app.filter('ExcludedNumber', function () {
-    return function (n) {
+    return function (ExcludedNumber) {
+        ExcludedNumber = ExcludedNumber || '';
 
+        return 'Excluded: ' + ExcludedNumber;
     };
 })

@@ -1,18 +1,21 @@
 ﻿'use strict';
 
 app.factory('NavigationService', function ($location) {
-        return {
-            next : function (id) {
-                $location.path('uppgift/' + (parseFloat(id, 10) + 1));
-            },
-            back: function (id) {
-                if (parseFloat(id, 10) > 1)
-                    $location.path('uppgift/' + (parseFloat(id, 10) - 1));
-                else
-                    $location.path('');
-            },
-            first : function () {
+    return {
+        next: function (id) {
+            id = (parseFloat(id, 10));
+            if (id < 9)
+                $location.path('uppgift/' + (id + 1));
+        },
+        back: function (id) {
+            id = (parseFloat(id, 10));
+            if (id > 1)
+                $location.path('uppgift/' + (id - 1));
+            else
                 $location.path('');
-            }
-        };
-    });
+        },
+        first: function () {
+            $location.path('');
+        }
+    };
+});

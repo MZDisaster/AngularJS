@@ -1,6 +1,8 @@
 ﻿
 app.filter('BuzzNumber', function () {
-    return function (n) {
+    return function (BuzzNumber) {
+        BuzzNumber = BuzzNumber || '';
 
+        return 'Buzz: ' + BuzzNumber;
     };
 })
